@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling.Including a viewport meta tag for proper responsive behaviors.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+   .checked {
+  color: #FDD835;
+}
+
+
+.card-content {
+  position: absolute;
+  visibility:hidden;
+  left:0;
+  right: 0;
+  height: 10%;
+  background-color:white;
+  transition: .1s ease;
+  
+overflow: hidden;
+}
+.card:hover .card-content {
+  bottom: 0;
+visibility: visible;
+}
+
+
+
+</style>
+
+<body>
+  <!--FIRST NAVBAR-->
+  <nav class="navbar navbar-expand-lg  bg-dark " style="height: auto;color: white;">
+    
+    <a class="navbar-brand" href="#" style="font-size: 90%; color: white;" >Welcome you to Ecolife store!</a>
+    
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link">Compare (0)</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">Wishlist (0)</a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">  
+                    Settings</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">A</a>
+          <a class="dropdown-item" href="#">B</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="color: white;">  
+                    USD</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">A</a>
+          <a class="dropdown-item" href="#">B</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="color: white;">  
+                    English</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">A</a>
+          <a class="dropdown-item" href="#">B</a>
+        </div>
+      </li>
+
+    </ul>
+  
+  </nav>
+  <!--FIRST NAVBAR END-->
+
+  <!--SECOND NAVBAR-->
+  <!--NAVIGATION BAR-->
+<nav class="navbar navbar-expand-md " style="background-color:white;color: black;">
+  <!-- Brand -->
+  <img class="navbar-brand img-fluid" href="#" src="logo.png" style="max-width: 7%;height: auto;">
+
+  <ul class="navbar-nav " style="margin-left: 7em;">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">  
+                  Home</a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">A</a>
+        <a class="dropdown-item" href="#">B</a>
+      </div>
+    </li>
+
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">  
+                  Shop</a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">A</a>
+        <a class="dropdown-item" href="#">B</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">  
+                  Pages</a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">A</a>
+        <a class="dropdown-item" href="#">B</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">  
+                  Blog</a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">A</a>
+        <a class="dropdown-item" href="#">B</a>
+      </div>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-link">Contact Us</a>
+    </li>
+  </ul>
+
+
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link mx-5"><i class='fa fa-search' style='font-size:24px'></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link mx-2"><i class="fa fa-phone" style="font-size:24px;"></i>  Call us:</br>(+0800)34887</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link mx-2"><i class="fa fa-shopping-bag" style="font-size:24px;"></i>   $20.00</a>
+    </li>
+
+
+  </ul>
+
+
+</nav>
+<!--SECOND NAVBAR END-->
+
+ 
+<div class="jumbotron" style="text-decoration-style: solid;text-align: center;border-width: thin;
+border-color: black;height: 300px;
+background-image: url('https://www.healthline.com/hlcmsresource/images/topic_centers/2019-9/Pink_Lemons_1200x628-facebook.jpg');">
+  <div class="my-4">
+    <h1 id="name">Shop Page</h1>
+    
+        <a style="color: black;"href="#" ::after >Home</a>
+        <i class="fa fa-angle-right" style="font-size:15px"></i>
+    
+        <a style="opacity: 0.9;">Shop Grid</a>
+    </div>
+    </div>
+
+<!----------->
+<div class="container-fluid" style="width: 97%;">
+
+<div class="row" style="background-color:#F6F6F6;height: 45px;">
+<div class="col-lg-6" style="background-color:#F6F6F6;height: 45px;">
+<div class="row">
+<div class="my-2" style="font-size: 20px;margin-left: 15px;"><i class="fa fa-th" aria-hidden="true"></i></div>
+<div class="my-2" style="font-size: 20px;margin-left: 30px;"><i class="fa fa-list" aria-hidden="true"></i></div>
+<div class="my-2" style="font-size: 20px;margin-left: 60px;"><p>There Are 17 Products.</p></div>
+</div>
+</div>
+
+
+<!------------------------------------------------->
+
+
+<div class="col-lg-6" style="background-color:#F6F6F6;height: 45px;">
+
+
+            <form class="form-inline">
+
+              <div class="form-group mt-1" >
+            
+                <label for="sel1" style="margin-right: 80px;">Sort By:</label>
+                <select class="form-control" id="sel1" name="sellist1" style="border-radius: 20px 20px 20px 20px;">
+                  <option>Sort by newness</option>
+                  <option>A to Z</option>
+                  <option>Z to A</option>
+                  <option>in stock</option>
+                </select>
+                                      </div>
+            
+            </form>
+
+
+</div>
+</div>
+
+
+
+
+
+</div>
+
+<!--CAAAAAAAAAAAARRRRRRRRRRDDDDDDDDDDDSSSSSSSSSSSSSSSSSS-->
+<div class="container-fluid mt-5">
+  <!--FIRST ROW-->
+  <div class="row mt-4">
+      <div class="col-12 col-sm-6 col-md-4 mb-4 ">
+
+<div class="card" style="height: auto;">
+<h6><span class="badge badge-success" style="margin-top: 8px;margin-left: 8px;">NEW</span></h6>
+<div class="card-img-wrapper">
+<img class="card-img-top" src="G:\ECOLIFE PROJECT\IMAGES\FRUIT_1.png" alt="Card image" style="width:100%">
+</div>
+
+
+<div class="card-body">
+
+  <p style="font-weight:normal;opacity: 0.7;font-size: 13px;">STUDIO DESIGN</p>
+  <h6 class="card-title" style="font-weight: bold;">Juicy Couture Juicy Quilted T..</h6>
+  <!--Star Rating-->
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<!--PRICE-->
+
+<div class="mt-4"> <h6><span style="opacity: 0.7;"><del>€18.90</del></span>  
+<span style="color: red;">€34.21</span>
+<span class="badge badge-danger" style="margin-left: 10px;">  -5%</span></h6>
+</div>
+
+<div class="card-content">
+<p class="card-text" style="margin-left: 20px;font-weight: 700;
+border: none;width: auto;cursor: pointer;line-height: 24px;
+border-width: 2px;height: 26px;font-size: 14px;"> <span style="border-bottom-style: solid;">ADD TO CART</span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-random" style="display: inline;" aria-hidden="true"></i></span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-heart-o" aria-hidden="true"></i> </span>  </p> 
+
+</div> </div> </div>    </div>
+<!--DUSRA CARD-->
+<div class="col-12 col-sm-6 col-md-4 ">
+
+<div class="card" >
+<h6><span class="badge badge-success" style="margin-top: 8px;margin-left: 8px;">NEW</span></h6>
+ <div class="card-img-wrapper">
+ <img class="card-img-top" src="FRUIT_1.png" alt="Card image" style="width:100%">
+ </div>
+ 
+ 
+<div class="card-body">
+
+    <p style="font-weight:normal;opacity: 0.7;font-size: 13px;">STUDIO DESIGN</p>
+    <h6 class="card-title" style="font-weight: bold;">Juicy Couture Juicy Quilted T..</h6>
+    <!--Star Rating-->
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<!--PRICE-->
+
+<div class="mt-4"> <h6><span style="opacity: 0.7;"><del>€18.90</del></span>  <span style="color: red;">€34.21</span><span class="badge badge-danger" style="margin-left: 10px;">  -5%</span></h6>
+</div>
+
+<div class="card-content">
+<p class="card-text" style="margin-left: 20px;font-weight: 700;
+border: none;width: auto;cursor: pointer;line-height: 24px;
+border-width: 2px;height: 26px;font-size: 14px;"> <span style="border-bottom-style: solid;">ADD TO CART</span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-random" style="display: inline;" aria-hidden="true"></i></span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-heart-o" aria-hidden="true"></i> </span>  </p> 
+
+</div> </div> </div>    </div>
+<!--TEESRA CARD-->
+<div class="col-12 col-sm-6 col-md-4">
+
+<div class="card">
+<h6><span class="badge badge-success" style="margin-top: 8px;margin-left: 8px;">NEW</span></h6>
+ <div class="card-img-wrapper">
+ <img class="card-img-top" src="FRUIT_1.png" alt="Card image" style="width:100%">
+ </div>
+ 
+ 
+<div class="card-body">
+
+    <p style="font-weight:normal;opacity: 0.7;font-size: 13px;">STUDIO DESIGN</p>
+    <h6 class="card-title" style="font-weight: bold;">Juicy Couture Juicy Quilted T..</h6>
+    <!--Star Rating-->
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<!--PRICE-->
+
+<div class="mt-4"> <h6><span style="opacity: 0.7;"><del>€18.90</del></span>  <span style="color: red;">€34.21</span><span class="badge badge-danger" style="margin-left: 10px;">  -5%</span></h6>
+</div>
+
+<div class="card-content">
+<p class="card-text" style="margin-left: 20px;font-weight: 700;
+border: none;width: auto;cursor: pointer;line-height: 24px;
+border-width: 2px;height: 26px;font-size: 14px;"> <span style="border-bottom-style: solid;">ADD TO CART</span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-random" style="display: inline;" aria-hidden="true"></i></span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-heart-o" aria-hidden="true"></i> </span>  </p> 
+
+</div> </div> </div>    </div>
+
+
+
+<!--SECOND ROW-->
+
+
+<div class="col-12 col-sm-6 col-md-4 mb-4 ">
+
+<div class="card" style="height: auto;">
+<h6><span class="badge badge-success" style="margin-top: 8px;margin-left: 8px;">NEW</span></h6>
+<div class="card-img-wrapper">
+<img class="card-img-top" src="FRUIT_1.png" alt="Card image" style="width:100%">
+</div>
+
+
+<div class="card-body">
+
+<p style="font-weight:normal;opacity: 0.7;font-size: 13px;">STUDIO DESIGN</p>
+<h6 class="card-title" style="font-weight: bold;">Juicy Couture Juicy Quilted T..</h6>
+<!--Star Rating-->
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<!--PRICE-->
+
+<div class="mt-4"> <h6><span style="opacity: 0.7;"><del>€18.90</del></span>  
+<span style="color: red;">€34.21</span>
+<span class="badge badge-danger" style="margin-left: 10px;">  -5%</span></h6>
+</div>
+
+<div class="card-content">
+<p class="card-text" style="margin-left: 20px;font-weight: 700;
+border: none;width: auto;cursor: pointer;line-height: 24px;
+border-width: 2px;height: 26px;font-size: 14px;"> <span style="border-bottom-style: solid;">ADD TO CART</span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-random" style="display: inline;" aria-hidden="true"></i></span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-heart-o" aria-hidden="true"></i> </span>  </p> 
+
+</div> </div> </div>    </div>
+<!--DUSRA CARD-->
+<div class="col-12 col-sm-6 col-md-4 ">
+
+<div class="card" >
+<h6><span class="badge badge-success" style="margin-top: 8px;margin-left: 8px;">NEW</span></h6>
+<div class="card-img-wrapper">
+<img class="card-img-top" src="FRUIT_1.png" alt="Card image" style="width:100%">
+</div>
+
+
+<div class="card-body">
+
+<p style="font-weight:normal;opacity: 0.7;font-size: 13px;">STUDIO DESIGN</p>
+<h6 class="card-title" style="font-weight: bold;">Juicy Couture Juicy Quilted T..</h6>
+<!--Star Rating-->
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<!--PRICE-->
+
+<div class="mt-4"> <h6><span style="opacity: 0.7;"><del>€18.90</del></span>  <span style="color: red;">€34.21</span><span class="badge badge-danger" style="margin-left: 10px;">  -5%</span></h6>
+</div>
+
+<div class="card-content">
+<p class="card-text" style="margin-left: 20px;font-weight: 700;
+border: none;width: auto;cursor: pointer;line-height: 24px;
+border-width: 2px;height: 26px;font-size: 14px;"> <span style="border-bottom-style: solid;">ADD TO CART</span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-random" style="display: inline;" aria-hidden="true"></i></span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-heart-o" aria-hidden="true"></i> </span>  </p> 
+
+</div> </div> </div>    </div>
+<!--TEESRA CARD-->
+<div class="col-12 col-sm-6 col-md-4">
+
+<div class="card">
+<h6><span class="badge badge-success" style="margin-top: 8px;margin-left: 8px;">NEW</span></h6>
+<div class="card-img-wrapper">
+<img class="card-img-top" src="FRUIT_1.png" alt="Card image" style="width:100%">
+</div>
+
+
+<div class="card-body">
+
+<p style="font-weight:normal;opacity: 0.7;font-size: 13px;">STUDIO DESIGN</p>
+<h6 class="card-title" style="font-weight: bold;">Juicy Couture Juicy Quilted T..</h6>
+<!--Star Rating-->
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<!--PRICE-->
+
+<div class="mt-4"> <h6><span style="opacity: 0.7;"><del>€18.90</del></span>  <span style="color: red;">€34.21</span><span class="badge badge-danger" style="margin-left: 10px;">  -5%</span></h6>
+</div>
+
+<div class="card-content">
+<p class="card-text" style="margin-left: 20px;font-weight: 700;
+border: none;width: auto;cursor: pointer;line-height: 24px;
+border-width: 2px;height: 26px;font-size: 14px;"> <span style="border-bottom-style: solid;">ADD TO CART</span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-random" style="display: inline;" aria-hidden="true"></i></span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-heart-o" aria-hidden="true"></i> </span>  </p> 
+
+</div> </div> </div>    </div>
+
+
+
+<!--THIRD ROW-->
+
+<div class="col-12 col-sm-6 col-md-4 mb-4 ">
+
+<div class="card" style="height: auto;">
+<h6><span class="badge badge-success" style="margin-top: 8px;margin-left: 8px;">NEW</span></h6>
+<div class="card-img-wrapper">
+<img class="card-img-top" src="FRUIT_1.png" alt="Card image" style="width:100%">
+</div>
+
+
+<div class="card-body">
+
+<p style="font-weight:normal;opacity: 0.7;font-size: 13px;">STUDIO DESIGN</p>
+<h6 class="card-title" style="font-weight: bold;">Juicy Couture Juicy Quilted T..</h6>
+<!--Star Rating-->
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<!--PRICE-->
+
+<div class="mt-4"> <h6><span style="opacity: 0.7;"><del>€18.90</del></span>  
+<span style="color: red;">€34.21</span>
+<span class="badge badge-danger" style="margin-left: 10px;">  -5%</span></h6>
+</div>
+
+<div class="card-content">
+<p class="card-text" style="margin-left: 20px;font-weight: 700;
+border: none;width: auto;cursor: pointer;line-height: 24px;
+border-width: 2px;height: 26px;font-size: 14px;"> <span style="border-bottom-style: solid;">ADD TO CART</span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-random" style="display: inline;" aria-hidden="true"></i></span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-heart-o" aria-hidden="true"></i> </span>  </p> 
+
+</div> </div> </div>    </div>
+<!--DUSRA CARD-->
+<div class="col-12 col-sm-6 col-md-4 ">
+
+<div class="card" >
+<h6><span class="badge badge-success" style="margin-top: 8px;margin-left: 8px;">NEW</span></h6>
+<div class="card-img-wrapper">
+<img class="card-img-top" src="FRUIT_1.png" alt="Card image" style="width:100%">
+</div>
+
+
+<div class="card-body">
+
+<p style="font-weight:normal;opacity: 0.7;font-size: 13px;">STUDIO DESIGN</p>
+<h6 class="card-title" style="font-weight: bold;">Juicy Couture Juicy Quilted T..</h6>
+<!--Star Rating-->
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<!--PRICE-->
+
+<div class="mt-4"> <h6><span style="opacity: 0.7;"><del>€18.90</del></span>  <span style="color: red;">€34.21</span><span class="badge badge-danger" style="margin-left: 10px;">  -5%</span></h6>
+</div>
+
+<div class="card-content">
+<p class="card-text" style="margin-left: 20px;font-weight: 700;
+border: none;width: auto;cursor: pointer;line-height: 24px;
+border-width: 2px;height: 26px;font-size: 14px;"> <span style="border-bottom-style: solid;">ADD TO CART</span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-random" style="display: inline;" aria-hidden="true"></i></span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-heart-o" aria-hidden="true"></i> </span>  </p> 
+
+</div> </div> </div>    </div>
+<!--TEESRA CARD-->
+<div class="col-12 col-sm-6 col-md-4">
+
+<div class="card">
+<h6><span class="badge badge-success" style="margin-top: 8px;margin-left: 8px;">NEW</span></h6>
+<div class="card-img-wrapper">
+<img class="card-img-top" src="FRUIT_1.png" alt="Card image" style="width:100%">
+</div>
+
+
+<div class="card-body">
+
+<p style="font-weight:normal;opacity: 0.7;font-size: 13px;">STUDIO DESIGN</p>
+<h6 class="card-title" style="font-weight: bold;">Juicy Couture Juicy Quilted T..</h6>
+<!--Star Rating-->
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<!--PRICE-->
+
+<div class="mt-4"> <h6><span style="opacity: 0.7;"><del>€18.90</del></span>  <span style="color: red;">€34.21</span><span class="badge badge-danger" style="margin-left: 10px;">  -5%</span></h6>
+</div>
+
+<div class="card-content">
+<p class="card-text" style="margin-left: 20px;font-weight: 700;
+border: none;width: auto;cursor: pointer;line-height: 24px;
+border-width: 2px;height: 26px;font-size: 14px;"> <span style="border-bottom-style: solid;">ADD TO CART</span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-random" style="display: inline;" aria-hidden="true"></i></span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-heart-o" aria-hidden="true"></i> </span>  </p> 
+
+</div> </div> </div>    </div>
+
+</div>
+
+
+
+<!----->
+</div> 
+<!--CARDSSSSS ENDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD-->
+
+<!-----FOOTER------>
+
+<div class="container-fluid">
+    <div class="row mt-5">
+
+        <div class="col-lg-4" style="background-color:#F6F6F6">
+          <div class=row>
+              <div class="col-lg-12">
+                  <img href="#" src="LOGOO.png" style="width: 70%; height: auto;margin-left: -3.5em;margin-bottom: -6em;margin-top: -2em;">
+              </div>
+          </div>
+          
+<p class="mt-5">We are a team of designers and developers that create high quality HTML template</p>
+
+<div class="row">
+  <div class="col-lg-2"><i class="fa fa-phone" style="font-size:55px;"></i></div>
+  <div class="col-lg-10" style="font-size: 120%;"><p>NEED HELP?</br><b><span style="font-size: 130%;">(+800) 345 678</br>(+800) 123 456</span></b></p></div>
+</div>
+<div class="row">
+  <div class="col-lg-2"></div>
+  <div class="col-lg-10">
+<i class="fa fa-facebook mx-2" aria-hidden="true" style="font-size: 24px;"></i>
+<i class="fa fa-twitter mx-2" aria-hidden="true" style="font-size: 24px;"></i>
+<i class="fa fa-youtube-play mx-2" aria-hidden="true" style="font-size: 24px;"></i>
+<i class="fa fa-google mx-2" aria-hidden="true" style="font-size: 24px;"></i>
+<i class="fa fa-instagram mx-2" aria-hidden="true" style="font-size: 24px;"></i>
+</div> 
+</div>
+
+<div class="my-5"><p>Copyright © HasThemes. All Rights Reserved</p></div>
+</div>
+  
+    <div class="col-lg-8" style="background-color:#EFEFEF;">
+
+     
+
+
+<div class="row">
+      <div class="col-lg-3 mt-5" >
+    <h5 class="mb-5">Information</h5>
+    <h6 style="font-weight: lighter;line-height: 2em;">Delivery</h6>
+    <h6 style="font-weight: lighter;line-height: 2em;">About Us</h6>
+    <h6 style="font-weight: lighter;line-height: 2em;">Secure Payment</h6>
+    <h6 style="font-weight: lighter;line-height: 2em;">Contact Us</h6>
+    <h6 style="font-weight: lighter;line-height: 2em;">Site Maps</h6>
+    <h6 style="font-weight: lighter;line-height: 2em;">Stores</h6>
+  </div>
+  <div class="col-lg-3 mt-5">
+      <h5 class="mb-5">Custom Links</h5>
+      <h6 style="font-weight: lighter;line-height: 2em;">Legal Notice</h6>
+      <h6 style="font-weight: lighter;line-height: 2em;">Prices Drop</h6>
+      <h6 style="font-weight: lighter;line-height: 2em;">New Products</h6>
+      <h6 style="font-weight: lighter;line-height: 2em;">Best Sales</h6>
+      <h6 style="font-weight: lighter;line-height: 2em;">Login</h6>
+      <h6 style="font-weight: lighter;line-height: 2em;">My Account</h6>
+    </div>
+<div class="col-lg-6 mt-5">
+  <h5 class="mb-5">Newsletter</h5>
+<p style="font-weight: lighter;">You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.</p>
+
+<form>
+  <div class="form-group" style="position: relative;">
+  <input type="email" id="email" placeholder="Enter email here" style="width: 100%;border: 0px;height: 45px;border-radius: 40px;padding-left: 2em;"> 
+  <button class="btn btn-dark" style="padding-top: 0%;position: absolute; top: 0px; 
+  right: 0px; 
+  height: 45px; 
+  cursor: pointer; 
+  transform: translateX(3px); 
+  border-top-right-radius: 40px;border-bottom-right-radius: 40px; ">Sign Up</button> 
+</div> 
+</form>
+
+<div class="row ">
+  <div class="col-lg-6 my-3"><img src="2.png" href="#" width="80%" height="95%"></div>
+  <div class="col-lg-6 my-3"><img src="1.png" href="#"  width="80%" height="auto"></div>
+</div>
+
+
+
+
+
+</div>
+
+</div>
+
+
+<div class="row ">
+  <div class="col-lg-1 my-4"><img src="card1.jpg" href="#" width="100%" height="auto"></div>
+  <div class="col-lg-1 my-4"><img src="card2.jpg" href="#" width="100%" height="auto"></div>
+  <div class="col-lg-1 my-4"><img src="card3.jpg" href="#" width="100%" height="auto"></div>
+  <div class="col-lg-1 my-4"><img src="card4.jpg" href="#" width="100%" height="auto"></div>
+</div>
+
+
+
+  </div>
+</div>
+</div>
+  </body>
+  </html>

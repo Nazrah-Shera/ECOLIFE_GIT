@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling.Including a viewport meta tag for proper responsive behaviors.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+.checked {
+  color: #FDD835;
+}
+
+
+.card-content {
+  position: absolute;
+  visibility:hidden;
+  left:0;
+  right: 0;
+  height: 10%;
+  background-color:white;
+  transition: .1s ease;
+  
+overflow: hidden;
+}
+.card:hover .card-content {
+  bottom: 0;
+visibility: visible;
+}
+
+
+
+
+
+</style>
+
+<body>
+ 
+    <div class="container-fluid">
+        <!--FIRST ROW-->
+        <div class="row mt-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4 ">
+  
+  <div class="card" style="height: auto;">
+    <h6><span class="badge badge-success" style="margin-top: 8px;margin-left: 8px;">NEW</span></h6>
+     <div class="card-img-wrapper">
+     <img class="card-img-top" src="G:\ECOLIFE PROJECT\FRUIT_1.png" alt="Card image" style="width:100%">
+     </div>
+     
+     
+    <div class="card-body">
+
+        <p style="font-weight:normal;opacity: 0.7;font-size: 13px;">STUDIO DESIGN</p>
+        <h6 class="card-title" style="font-weight: bold;">Juicy Couture Juicy Quilted T..</h6>
+        <!--Star Rating-->
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <!--PRICE-->
+   
+   <div class="mt-4"> <h6><span style="opacity: 0.7;"><del>€18.90</del></span>  
+    <span style="color: red;">€34.21</span>
+    <span class="badge badge-danger" style="margin-left: 10px;">  -5%</span></h6>
+   </div>
+
+<div class="card-content">
+    <p class="card-text" style="margin-left: 20px;font-weight: 700;
+    border: none;width: auto;cursor: pointer;line-height: 24px;
+    border-width: 2px;height: 26px;font-size: 14px;"> <span style="border-bottom-style: solid;">ADD TO CART</span>
+    <span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-random" style="display: inline;" aria-hidden="true"></i></span>
+    <span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-heart-o" aria-hidden="true"></i> </span>  </p> 
+
+  </div> </div> </div>    </div>
+<!--DUSRA CARD-->
+<div class="col-12 col-sm-6 col-md-4 ">
+  
+    <div class="card" >
+      <h6><span class="badge badge-success" style="margin-top: 8px;margin-left: 8px;">NEW</span></h6>
+       <div class="card-img-wrapper">
+       <img class="card-img-top" src="G:\ECOLIFE PROJECT\FRUIT_1.png" alt="Card image" style="width:100%">
+       </div>
+       
+       
+      <div class="card-body">
+  
+          <p style="font-weight:normal;opacity: 0.7;font-size: 13px;">STUDIO DESIGN</p>
+          <h6 class="card-title" style="font-weight: bold;">Juicy Couture Juicy Quilted T..</h6>
+          <!--Star Rating-->
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <!--PRICE-->
+     
+    <div class="mt-4"> <h6><span style="opacity: 0.7;"><del>€18.90</del></span>  <span style="color: red;">€34.21</span><span class="badge badge-danger" style="margin-left: 10px;">  -5%</span></h6>
+    </div>
+  
+<div class="card-content">
+    <p class="card-text" style="margin-left: 20px;font-weight: 700;
+    border: none;width: auto;cursor: pointer;line-height: 24px;
+    border-width: 2px;height: 26px;font-size: 14px;"> <span style="border-bottom-style: solid;">ADD TO CART</span>
+    <span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-random" style="display: inline;" aria-hidden="true"></i></span>
+    <span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-heart-o" aria-hidden="true"></i> </span>  </p> 
+
+  </div> </div> </div>    </div>
+<!--TEESRA CARD-->
+<div class="col-12 col-sm-6 col-md-4">
+  
+    <div class="card">
+      <h6><span class="badge badge-success" style="margin-top: 8px;margin-left: 8px;">NEW</span></h6>
+       <div class="card-img-wrapper">
+       <img class="card-img-top" src="G:\ECOLIFE PROJECT\FRUIT_1.png" alt="Card image" style="width:100%">
+       </div>
+       
+       
+      <div class="card-body">
+  
+          <p style="font-weight:normal;opacity: 0.7;font-size: 13px;">STUDIO DESIGN</p>
+          <h6 class="card-title" style="font-weight: bold;">Juicy Couture Juicy Quilted T..</h6>
+          <!--Star Rating-->
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <!--PRICE-->
+     
+     <div class="mt-4"> <h6><span style="opacity: 0.7;"><del>€18.90</del></span>  <span style="color: red;">€34.21</span><span class="badge badge-danger" style="margin-left: 10px;">  -5%</span></h6>
+     </div>
+  
+<div class="card-content">
+    <p class="card-text" style="margin-left: 20px;font-weight: 700;
+    border: none;width: auto;cursor: pointer;line-height: 24px;
+    border-width: 2px;height: 26px;font-size: 14px;"> <span style="border-bottom-style: solid;">ADD TO CART</span>
+    <span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-random" style="display: inline;" aria-hidden="true"></i></span>
+    <span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-heart-o" aria-hidden="true"></i> </span>  </p> 
+
+  </div> </div> </div>    </div>
+
+</div>
+
+<!--SECOND ROW-->
+
+<div class="row mt-4">
+    <div class="col-12 col-sm-6 col-md-4 mb-4 ">
+
+<div class="card" style="height: auto;">
+<h6><span class="badge badge-success" style="margin-top: 8px;margin-left: 8px;">NEW</span></h6>
+<div class="card-img-wrapper">
+<img class="card-img-top" src="G:\ECOLIFE PROJECT\FRUIT_1.png" alt="Card image" style="width:100%">
+</div>
+
+
+<div class="card-body">
+
+<p style="font-weight:normal;opacity: 0.7;font-size: 13px;">STUDIO DESIGN</p>
+<h6 class="card-title" style="font-weight: bold;">Juicy Couture Juicy Quilted T..</h6>
+<!--Star Rating-->
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<!--PRICE-->
+
+<div class="mt-4"> <h6><span style="opacity: 0.7;"><del>€18.90</del></span>  
+<span style="color: red;">€34.21</span>
+<span class="badge badge-danger" style="margin-left: 10px;">  -5%</span></h6>
+</div>
+
+<div class="card-content">
+<p class="card-text" style="margin-left: 20px;font-weight: 700;
+border: none;width: auto;cursor: pointer;line-height: 24px;
+border-width: 2px;height: 26px;font-size: 14px;"> <span style="border-bottom-style: solid;">ADD TO CART</span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-random" style="display: inline;" aria-hidden="true"></i></span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-heart-o" aria-hidden="true"></i> </span>  </p> 
+
+</div> </div> </div>    </div>
+<!--DUSRA CARD-->
+<div class="col-12 col-sm-6 col-md-4 ">
+
+<div class="card" >
+<h6><span class="badge badge-success" style="margin-top: 8px;margin-left: 8px;">NEW</span></h6>
+<div class="card-img-wrapper">
+<img class="card-img-top" src="G:\ECOLIFE PROJECT\FRUIT_1.png" alt="Card image" style="width:100%">
+</div>
+
+
+<div class="card-body">
+
+  <p style="font-weight:normal;opacity: 0.7;font-size: 13px;">STUDIO DESIGN</p>
+  <h6 class="card-title" style="font-weight: bold;">Juicy Couture Juicy Quilted T..</h6>
+  <!--Star Rating-->
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<!--PRICE-->
+
+<div class="mt-4"> <h6><span style="opacity: 0.7;"><del>€18.90</del></span>  <span style="color: red;">€34.21</span><span class="badge badge-danger" style="margin-left: 10px;">  -5%</span></h6>
+</div>
+
+<div class="card-content">
+<p class="card-text" style="margin-left: 20px;font-weight: 700;
+border: none;width: auto;cursor: pointer;line-height: 24px;
+border-width: 2px;height: 26px;font-size: 14px;"> <span style="border-bottom-style: solid;">ADD TO CART</span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-random" style="display: inline;" aria-hidden="true"></i></span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-heart-o" aria-hidden="true"></i> </span>  </p> 
+
+</div> </div> </div>    </div>
+<!--TEESRA CARD-->
+<div class="col-12 col-sm-6 col-md-4">
+
+<div class="card">
+<h6><span class="badge badge-success" style="margin-top: 8px;margin-left: 8px;">NEW</span></h6>
+<div class="card-img-wrapper">
+<img class="card-img-top" src="G:\ECOLIFE PROJECT\FRUIT_1.png" alt="Card image" style="width:100%">
+</div>
+
+
+<div class="card-body">
+
+  <p style="font-weight:normal;opacity: 0.7;font-size: 13px;">STUDIO DESIGN</p>
+  <h6 class="card-title" style="font-weight: bold;">Juicy Couture Juicy Quilted T..</h6>
+  <!--Star Rating-->
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<!--PRICE-->
+
+<div class="mt-4"> <h6><span style="opacity: 0.7;"><del>€18.90</del></span>  <span style="color: red;">€34.21</span><span class="badge badge-danger" style="margin-left: 10px;">  -5%</span></h6>
+</div>
+
+<div class="card-content">
+<p class="card-text" style="margin-left: 20px;font-weight: 700;
+border: none;width: auto;cursor: pointer;line-height: 24px;
+border-width: 2px;height: 26px;font-size: 14px;"> <span style="border-bottom-style: solid;">ADD TO CART</span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-random" style="display: inline;" aria-hidden="true"></i></span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-heart-o" aria-hidden="true"></i> </span>  </p> 
+
+</div> </div> </div>    </div>
+
+</div>
+
+<!--THIRD ROW-->
+<div class="row mt-4">
+    <div class="col-12 col-sm-6 col-md-4 mb-4 ">
+
+<div class="card" style="height: auto;">
+<h6><span class="badge badge-success" style="margin-top: 8px;margin-left: 8px;">NEW</span></h6>
+<div class="card-img-wrapper">
+<img class="card-img-top" src="G:\ECOLIFE PROJECT\FRUIT_1.png" alt="Card image" style="width:100%">
+</div>
+
+
+<div class="card-body">
+
+<p style="font-weight:normal;opacity: 0.7;font-size: 13px;">STUDIO DESIGN</p>
+<h6 class="card-title" style="font-weight: bold;">Juicy Couture Juicy Quilted T..</h6>
+<!--Star Rating-->
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<!--PRICE-->
+
+<div class="mt-4"> <h6><span style="opacity: 0.7;"><del>€18.90</del></span>  
+<span style="color: red;">€34.21</span>
+<span class="badge badge-danger" style="margin-left: 10px;">  -5%</span></h6>
+</div>
+
+<div class="card-content">
+<p class="card-text" style="margin-left: 20px;font-weight: 700;
+border: none;width: auto;cursor: pointer;line-height: 24px;
+border-width: 2px;height: 26px;font-size: 14px;"> <span style="border-bottom-style: solid;">ADD TO CART</span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-random" style="display: inline;" aria-hidden="true"></i></span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-heart-o" aria-hidden="true"></i> </span>  </p> 
+
+</div> </div> </div>    </div>
+<!--DUSRA CARD-->
+<div class="col-12 col-sm-6 col-md-4 ">
+
+<div class="card" >
+<h6><span class="badge badge-success" style="margin-top: 8px;margin-left: 8px;">NEW</span></h6>
+<div class="card-img-wrapper">
+<img class="card-img-top" src="G:\ECOLIFE PROJECT\FRUIT_1.png" alt="Card image" style="width:100%">
+</div>
+
+
+<div class="card-body">
+
+  <p style="font-weight:normal;opacity: 0.7;font-size: 13px;">STUDIO DESIGN</p>
+  <h6 class="card-title" style="font-weight: bold;">Juicy Couture Juicy Quilted T..</h6>
+  <!--Star Rating-->
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<!--PRICE-->
+
+<div class="mt-4"> <h6><span style="opacity: 0.7;"><del>€18.90</del></span>  <span style="color: red;">€34.21</span><span class="badge badge-danger" style="margin-left: 10px;">  -5%</span></h6>
+</div>
+
+<div class="card-content">
+<p class="card-text" style="margin-left: 20px;font-weight: 700;
+border: none;width: auto;cursor: pointer;line-height: 24px;
+border-width: 2px;height: 26px;font-size: 14px;"> <span style="border-bottom-style: solid;">ADD TO CART</span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-random" style="display: inline;" aria-hidden="true"></i></span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-heart-o" aria-hidden="true"></i> </span>  </p> 
+
+</div> </div> </div>    </div>
+<!--TEESRA CARD-->
+<div class="col-12 col-sm-6 col-md-4">
+
+<div class="card">
+<h6><span class="badge badge-success" style="margin-top: 8px;margin-left: 8px;">NEW</span></h6>
+<div class="card-img-wrapper">
+<img class="card-img-top" src="G:\ECOLIFE PROJECT\FRUIT_1.png" alt="Card image" style="width:100%">
+</div>
+
+
+<div class="card-body">
+
+  <p style="font-weight:normal;opacity: 0.7;font-size: 13px;">STUDIO DESIGN</p>
+  <h6 class="card-title" style="font-weight: bold;">Juicy Couture Juicy Quilted T..</h6>
+  <!--Star Rating-->
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<!--PRICE-->
+
+<div class="mt-4"> <h6><span style="opacity: 0.7;"><del>€18.90</del></span>  <span style="color: red;">€34.21</span><span class="badge badge-danger" style="margin-left: 10px;">  -5%</span></h6>
+</div>
+
+<div class="card-content">
+<p class="card-text" style="margin-left: 20px;font-weight: 700;
+border: none;width: auto;cursor: pointer;line-height: 24px;
+border-width: 2px;height: 26px;font-size: 14px;"> <span style="border-bottom-style: solid;">ADD TO CART</span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-random" style="display: inline;" aria-hidden="true"></i></span>
+<span style="float: right;font-size: 18px;margin-right: 10px;"><i class="fa fa-heart-o" aria-hidden="true"></i> </span>  </p> 
+
+</div> </div> </div>    </div>
+
+</div>
+
+
+
+<!----->
+    </div>   
+
+  </body>
+  </html>
