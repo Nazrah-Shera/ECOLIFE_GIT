@@ -17,57 +17,41 @@
 </head>
 
 <style>
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 540px) and (max-width: 576px) {  
- .navbarbrand{
+@media only screen and (max-width: 767px) {  
+ #brand {
+ width: 100%;
      text-align: center;
-     align-items: center;
- }
+     font-style: oblique;
+   }
 }
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 720px) and (max-width: 768px) {  
- 
-}
- 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 960px) and (max-width: 992px) { 
-    .navbarbrand{
+
+@media only screen and (max-width: 960px) {  
+.navbar-nav {
+ width: 100%;
      text-align: center;
-     align-items: center;
- }
-}
- 
-@media (min-width: 1140px) and (max-width: 1200px) { 
-    .navbarbrand{
-     text-align: center;
-     align-items: center;
- }
-}
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 540px) and (max-width: 576px) {  
-    .navbarbrand{
-     text-align: center;
-     align-items: center;
- }
-}
+     font-style: oblique;
+  display: inline-block;
+   }
+  }
+
 </style>
 
 <body>
   <!--FIRST NAVBAR-->
   <nav class="navbar navbar-expand-lg  bg-dark " style="height: auto;color: white;">
     
-    <a class="navbar-brand" href="#" style="font-size: 90%; color: white;" >Welcome you to Ecolife store!</a>
+    <a id="brand" class="navbar-brand" href="#" style="font-size: 90%; color: white;" >Welcome you to Ecolife store!</a>
     
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link">Compare (0)</a>
+    <ul id="un" class="navbar-nav ml-auto">
+      <li id="f" class="nav-item">
+        <a id="c" class="nav-link">Compare (0)</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link">Wishlist (0)</a>
+      <li id="f" class="nav-item">
+        <a id="w" class="nav-link">Wishlist (0)</a>
       </li>
       
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">  
+      <li id="s" class="nav-item dropdown">
+        <a id="sue" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">  
                     Settings</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">A</a>
@@ -75,8 +59,8 @@
         </div>
       </li>
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="color: white;">  
+      <li  id="s" class="nav-item dropdown">
+        <a id="sue" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="color: white;">  
                     USD</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">A</a>
@@ -84,8 +68,8 @@
         </div>
       </li>
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="color: white;">  
+      <li id="s" class="nav-item dropdown">
+        <a id="sue" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="color: white;">  
                     English</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">A</a>
